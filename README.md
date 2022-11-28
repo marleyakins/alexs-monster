@@ -12,6 +12,8 @@ A monsterous revival of the long forgotten Alex project, Alex's Monster convicts
 - [ ] Create debate system
 - [ ] Create leaderboard and betting system
 
+P.S. Language of choice is python but if you somehow find an efficient and costly way of communicating with Python through another language seamlessly then more power to you.
+
 ## Debate System
 
 The debate system will likely be a relatively simple system similiar to that of Open Debates 1.0, for those familiar with the world of Discord debate systems. For those who are not familiar, a basic rundown can be found below.
