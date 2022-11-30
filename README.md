@@ -4,8 +4,8 @@ A monsterous revival of the long forgotten Alex project, Alex's Monster convicts
 
 ## Roadmap
 
-- [ ] Pick a API library for discord
-- [ ] Pick a[n] command/interaction handler
+- [x] Pick a API library for discord
+- [x] Pick a[n] command/interaction handler
 - [ ] Create debate room system
 - [ ] Create basic server management commands
 - [ ] Create debate ranking system
