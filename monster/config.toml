@@ -1,0 +1,3 @@
+[bot]
+extensions = ["core", "debates", "rooms"]
+token = "token here"
