@@ -1,17 +1,17 @@
-import typing
+import typing`
 
 class Handler(object):
-    def __init__(self, scale_factor: int = 200) -> None:
-        self.scale_factor = scale_factor
+    def __init__(self, scale: float = 200.0) -> None:
+        self.scale = scale
 
-    def __calculate(self, a: float, b: float) -> float:
-        k = sqrt(a + b) / 2
-        factor = (a + b)/(200 * k/(a + b))
-        return ciel(factor) - factor
+    def k(self, i: float, j: float) -> float:
+        return sqrt(i + j) / 2.0
 
-    def game(winner: float, loser: float) -> typing.Tuple[float]:
-        return (winner + self.__calculate(winner, loser), loser - self.__calculate(winner, loser))
+    def s(self, i: float, j: float) -> float:
+        s1 = i + j
+        s2 = self.scale * self.k(i, j)
+        return s1 / (self.scale - (s2/s1)
 
-    def set_scale_factor(self, scale_factor: int) -> None:
-        self.scale_factor = scale_factor
-
+    def calculate(self, i: float, j: float) -> float:
+        P = self.k(i, j) * (self.s(i, j) - floor(self.s(i, j)))
+        return [i + P, j - P]
